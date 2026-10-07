@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#f5f5f7">
-  <title>АЙСТОР — ремонт iPhone и техники Apple в Крыму</title>
-  <meta name="description" content="Профессиональный ремонт iPhone и техники Apple в Симферополе. Диагностика, замена дисплея и аккумулятора, ремонт плат. Гарантия на работы.">
+  <title>АЙСТОР — техника, аксессуары и ремонт в Крыму</title>
+  <meta name="description" content="Техника Apple, аксессуары и профессиональный ремонт в Симферополе. Актуальные цены, помощь с выбором, диагностика и гарантия на работы.">
   <style>
     :root{--ink:#1d1d1f;--muted:#6e6e73;--paper:#fff;--soft:#f5f5f7;--red:#e30613;--blue:#06c;--dark:#000;--line:rgba(0,0,0,.09);--ease:cubic-bezier(.22,1,.36,1);--shadow:0 30px 80px rgba(0,0,0,.12)}
     *{box-sizing:border-box;margin:0;padding:0}
@@ -136,6 +136,45 @@
     @media(max-width:560px){.hero{padding-top:105px}.hero-logo .logo-text{font-size:44px}.hero-logo .logo-underline{font-size:9px}.fly-card.f3,.fly-card.f4{display:none}.fly-card{opacity:.6}.hero-device{min-height:330px;height:330px;margin-top:52px;border-radius:28px}.ticker{margin-top:0}.logo-text{font-size:20px}.nav-cta{margin-left:auto}.iphone-card{min-height:540px;height:68vh;padding:28px}.phone-visual{min-height:270px}.phone-visual img{height:290px}.service-photo{width:82%;height:55%;opacity:.9}.cookie-banner{bottom:10px;display:block;padding:18px;border-radius:20px}.cookie-actions{margin-top:14px}.cookie-button{flex:1;padding-inline:10px}.float-wa{bottom:178px}}
     @media(prefers-reduced-motion:reduce){.motion-field,.orbit-stage,#particleCanvas,.film-grain{display:none}.hero-device::before,.hero-device img,.service-card::before,.service-photo,.services::before{animation:none}}
   </style>
+  <style id="homepage-preview">
+    .hero{padding-bottom:80px}
+    .hero h1{max-width:1120px;font-size:clamp(60px,9.3vw,116px)}
+    .hero-sub{max-width:900px}
+    .hero-device.hero-dual{width:min(1060px,100%);height:470px;min-height:0;margin:58px auto -105px;border:0;border-radius:34px;background:transparent;box-shadow:none;display:grid;grid-template-columns:1fr 1fr;gap:16px;overflow:visible;transform:none!important}
+    .hero-device.hero-dual::before,.hero-device.hero-dual::after{display:none}
+    .hero-choice{position:relative;overflow:hidden;border:1px solid rgba(255,255,255,.14);border-radius:34px;text-align:left;padding:35px;color:#fff;background:#111;box-shadow:0 28px 80px rgba(0,0,0,.48);isolation:isolate;transition:transform .5s var(--ease),border-color .5s var(--ease)}
+    .hero-choice:hover{transform:translateY(-8px);border-color:rgba(255,255,255,.3)}
+    .hero-choice.product-side{background:radial-gradient(circle at 78% 58%,rgba(255,255,255,.12),transparent 30%),radial-gradient(circle at 68% 44%,rgba(227,6,19,.32),transparent 48%),linear-gradient(145deg,#1c0508,#080809)}
+    .hero-choice.product-side::before{content:'';position:absolute;width:310px;height:310px;right:-45px;bottom:-75px;border:1px solid rgba(255,255,255,.11);border-radius:50%;box-shadow:0 0 0 48px rgba(255,255,255,.025),0 0 0 96px rgba(255,255,255,.012);z-index:-1}
+    .hero-choice.repair-side{background:linear-gradient(120deg,rgba(0,0,0,.96),rgba(0,0,0,.38)),url('repair-hero.png') 58% center/cover no-repeat}
+    .hero-choice-copy{position:relative;z-index:2;max-width:310px}
+    .hero-choice-label{font-size:11px;font-weight:750;letter-spacing:.14em;text-transform:uppercase;color:#ff6a75}
+    .hero-choice h2{font-size:clamp(34px,4vw,54px);line-height:.92;letter-spacing:-.055em;margin-top:14px}
+    .hero-choice p{font-size:15px;line-height:1.45;color:#aaaab0;margin-top:14px}
+    .hero-choice-action{display:inline-flex;align-items:center;gap:8px;margin-top:22px;font-size:14px;font-weight:700}
+    .hero-choice-action b{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--red)}
+    .hero-choice.product-side>img{position:absolute;width:72%;height:76%;right:-9%;bottom:-2%;object-fit:contain;object-position:right bottom;filter:drop-shadow(0 30px 34px rgba(0,0,0,.6));animation:duoFloat 6s ease-in-out infinite;transform:none}
+    @keyframes duoFloat{50%{transform:translateY(-7px) rotate(-1deg)}}
+    .why{background:#f3f3f1;color:#171719;padding:125px 0}
+    .why .section-head{text-align:left;margin:0 0 58px;max-width:940px}
+    .why .title{font-size:clamp(52px,8vw,94px)}
+    .why .lede{margin-left:0;max-width:680px}
+    .why-grid{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid rgba(0,0,0,.18)}
+    .why-item{min-height:220px;padding:30px 34px 34px 0;border-bottom:1px solid rgba(0,0,0,.18);position:relative}
+    .why-item:nth-child(even){padding-left:34px;border-left:1px solid rgba(0,0,0,.18)}
+    .why-item small{font-size:11px;font-weight:750;color:#8a121a;letter-spacing:.14em;text-transform:uppercase}
+    .why-item h3{font-size:clamp(26px,3vw,38px);letter-spacing:-.045em;line-height:1.02;margin-top:29px}
+    .why-item p{max-width:440px;color:#6e6e73;line-height:1.5;margin-top:12px}
+    .phone-visual{width:286px;height:286px;min-height:286px;flex:none;margin:18px auto 0;border-radius:50%;overflow:hidden;background:#fff;box-shadow:0 24px 65px rgba(0,0,0,.34),inset 0 0 0 1px rgba(0,0,0,.06);perspective:none}
+    .phone-visual::before{display:none}
+    .phone-visual img{width:100%;height:100%;max-width:none;object-fit:cover;border-radius:50%;filter:none;animation:phoneCircleFloat 5s ease-in-out infinite;will-change:transform}
+    .iphone-card:nth-child(even) .phone-visual img{animation-delay:-2.4s}
+    @keyframes phoneCircleFloat{50%{transform:translateY(-5px) scale(1.025)}}
+    .iphone-bottom small{font-size:17px;color:#fff;font-weight:750}
+    .contact h2{font-size:clamp(54px,8vw,96px)}
+    @media(max-width:800px){.hero-device.hero-dual{height:auto;grid-template-columns:1fr;margin-bottom:-30px}.hero-choice{min-height:400px}.why{padding:88px 0}.why-grid{grid-template-columns:1fr}.why-item,.why-item:nth-child(even){padding:28px 0;border-left:0;min-height:0}.why-item h3{margin-top:18px}}
+    @media(max-width:560px){.hero h1{font-size:54px}.hero-device.hero-dual{margin-top:44px}.hero-choice{min-height:360px;padding:28px}.hero-choice.product-side>img{width:78%;height:68%;right:-14%;bottom:-1%}.hero-choice-copy{max-width:245px}.why .title{font-size:48px}.phone-visual{width:248px;height:248px;min-height:248px}}
+  </style>
 </head>
 <body>
   <canvas id="particleCanvas" aria-hidden="true"></canvas>
@@ -147,7 +186,7 @@
     <div class="wrap nav-inner">
       <a href="#top" class="logo" aria-label="АЙСТОР"><span class="logo-text"><span class="logo-red">АЙ</span><span class="logo-white">СТОР</span></span><span class="logo-underline">продукция<span class="dot">•</span>аксессуары<span class="dot">•</span>ремонт</span></a>
       <nav class="nav-links" aria-label="Главная навигация"><a href="#repair">Ремонт</a><a href="catalog.html">Каталог</a><a href="#process">Как работаем</a><a href="#store">Техника</a><a href="#reviews">Отзывы</a><a href="#contact">Контакты</a></nav>
-      <a class="nav-cta" href="https://wa.me/79788425672?text=Здравствуйте!%20Хочу%20оценить%20ремонт" target="_blank" rel="noopener">Записаться</a>
+      <a class="nav-cta" href="#contact" data-contact-trigger>Консультация</a>
       <button class="menu" id="menu" aria-label="Открыть меню">☰</button>
     </div>
   </header>
@@ -162,14 +201,31 @@
       </div>
       <div class="wrap hero-copy">
         <div class="hero-logo reveal in"><a href="#top" class="logo" aria-label="АЙСТОР"><span class="logo-text"><span class="logo-red">АЙ</span><span class="logo-white">СТОР</span></span><span class="logo-underline">продукция<span class="dot">•</span>аксессуары<span class="dot">•</span>ремонт</span></a></div>
-        <div class="eyebrow reveal in">Профессиональный сервис Apple в Крыму</div>
-        <h1 class="reveal in">Ремонт.<br>Как новый.</h1>
-        <p class="hero-sub reveal in">Точно определим неисправность. Согласуем стоимость. Вернём устройство в строй.</p>
+        <div class="eyebrow reveal in">Техника Apple, аксессуары и сервис в Крыму</div>
+        <h1 class="reveal in">Техника.<br>Ремонт. АЙСТОР.</h1>
+        <p class="hero-sub reveal in">Поможем выбрать устройство или вернём ваше в строй. Актуальные цены, честная диагностика и поддержка после покупки.</p>
         <div class="hero-actions reveal in"><a class="button primary" href="catalog.html">Каталог товаров</a><a class="button link" href="#contact" data-contact-trigger>Получить консультацию</a></div>
-        <div class="hero-device"><img src="repair-hero.png" alt="Профессиональный ремонт смартфона в мастерской"><div class="device-label"><span>Диагностика до ремонта</span><span>Гарантия 90 дней</span></div></div>
+        <div class="hero-device hero-dual" id="hero-choices">
+          <a class="hero-choice product-side" href="catalog.html"><div class="hero-choice-copy"><span class="hero-choice-label">Техника в наличии</span><h2>Выберите своё.</h2><p>iPhone, MacBook, iPad, Watch, наушники и аксессуары с актуальными ценами.</p><span class="hero-choice-action">Открыть каталог <b>↗</b></span></div><img src="iphone-duo-card-v2.png" alt="Складной iPhone Duo из каталога АЙСТОР"></a>
+          <a class="hero-choice repair-side" href="#repair"><div class="hero-choice-copy"><span class="hero-choice-label">Профессиональный сервис</span><h2>Вернём в строй.</h2><p>Бесплатно определим неисправность, согласуем стоимость и дадим гарантию 90 дней.</p><span class="hero-choice-action">Выбрать ремонт <b>↓</b></span></div></a>
+        </div>
       </div>
     </section>
     <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>Замена дисплея <i>●</i></span><span>Аккумулятор <i>●</i></span><span>Ремонт платы <i>●</i></span><span>После воды <i>●</i></span><span>Диагностика бесплатно <i>●</i></span><span>Замена дисплея <i>●</i></span><span>Аккумулятор <i>●</i></span><span>Ремонт платы <i>●</i></span><span>После воды <i>●</i></span><span>Диагностика бесплатно <i>●</i></span></div></div>
+
+    <section class="why" id="why">
+      <div class="wrap">
+        <div class="section-head reveal"><div class="kicker">Почему АЙСТОР</div><h2 class="title">6 причин<br>выбрать нас.</h2><p class="lede">Покупка и ремонт техники должны быть понятными. Поэтому заранее объясняем условия, называем цену и остаёмся на связи.</p></div>
+        <div class="why-grid">
+          <article class="why-item reveal"><small>01 · Опыт</small><h3>Более пяти лет с техникой Apple</h3><p>Знаем устройства изнутри и помогаем подобрать модель под ваши задачи.</p></article>
+          <article class="why-item reveal d2"><small>02 · Цена</small><h3>Актуальный прайс без догадок</h3><p>Показываем стоимость доступных товаров и согласовываем ремонт до начала работ.</p></article>
+          <article class="why-item reveal"><small>03 · Диагностика</small><h3>Сначала находим причину</h3><p>Первичная диагностика бесплатна. Ненужные работы и детали не навязываем.</p></article>
+          <article class="why-item reveal d2"><small>04 · Гарантия</small><h3>90 дней на выполненную работу</h3><p>Проверяем устройство после ремонта и отвечаем за результат.</p></article>
+          <article class="why-item reveal"><small>05 · Данные</small><h3>Бережно к устройству и информации</h3><p>Работаем аккуратно и заранее предупреждаем о возможных рисках.</p></article>
+          <article class="why-item reveal d2"><small>06 · Связь</small><h3>Удобно написать или позвонить</h3><p>WhatsApp, Telegram и телефон — выберите привычный способ общения.</p></article>
+        </div>
+      </div>
+    </section>
 
     <section class="services section-pad" id="repair">
       <div class="wrap">
@@ -196,36 +252,36 @@
     </section>
 
     <section class="store catalog-head" id="store">
-      <div class="wrap"><div class="section-head reveal"><div class="kicker">Каталог 2026</div><h2 class="title">Последние модели.<br>Уже в АЙСТОР.</h2><p class="lede">Актуальная линейка iPhone. Наличие, цвет, память и стоимость уточняйте в WhatsApp — цены обновляются ежедневно.</p><a class="button primary catalog-cta" href="catalog.html"><span>Смотреть весь каталог</span><span class="catalog-cta-icon" aria-hidden="true">↗</span></a></div></div>
+      <div class="wrap"><div class="section-head reveal"><div class="kicker">Популярное сейчас · цены обновлены 8 октября</div><h2 class="title">Выбирают чаще.<br>Цены уже здесь.</h2><p class="lede">Показываем минимальную актуальную стоимость популярных моделей прямо на главной. Цвета, память и наличие можно уточнить одним сообщением.</p><a class="button primary catalog-cta" href="catalog.html"><span>Смотреть весь каталог</span><span class="catalog-cta-icon" aria-hidden="true">↗</span></a></div></div>
     </section>
     <section class="catalog-scroll" id="catalogScroll">
       <div class="catalog-sticky">
         <div class="catalog-toolbar"><span>Листайте коллекцию</span><div class="catalog-meter"><i id="catalogMeter"></i></div><span id="catalogCount">01 / 05</span></div>
         <div class="catalog-track" id="catalogTrack">
-          <article class="iphone-card duo active" data-model="iPhone Duo">
-            <span class="iphone-new">Новинка · предзаказ</span><span class="iphone-index">01</span>
-            <div class="phone-visual"><img src="iphone-duo.png" alt="iPhone Duo в сложенном и раскрытом виде" loading="lazy"></div>
-            <div class="iphone-info"><h3>iPhone Duo</h3><p class="iphone-tagline">Первый складной iPhone.</p><div class="iphone-specs"><span>7.6″ + 5.4″</span><span>A20 Pro</span><span>48MP Dual Fusion</span></div><div class="iphone-bottom"><small>Цена по запросу</small><a class="iphone-buy magnetic" href="https://wa.me/79788425672?text=Интересует%20iPhone%20Duo" target="_blank" rel="noopener" aria-label="Узнать цену iPhone Duo">↗</a></div></div>
+          <article class="iphone-card duo active" data-model="iPhone 17 Pro">
+            <span class="iphone-new">Популярная Pro-модель</span><span class="iphone-index">01</span>
+            <div class="phone-visual"><img src="assets/products/normalized/iphonePro.png" alt="iPhone 17 Pro из каталога АЙСТОР" loading="lazy"></div>
+            <div class="iphone-info"><h3>iPhone 17 Pro</h3><p class="iphone-tagline">Pro-возможности в компактном корпусе.</p><div class="iphone-specs"><span>256 ГБ</span><span>eSIM</span><span>3 цвета</span></div><div class="iphone-bottom"><small>от 95 500 ₽</small><a class="iphone-buy magnetic" href="https://wa.me/79788425672?text=Интересует%20iPhone%2017%20Pro" target="_blank" rel="noopener" aria-label="Уточнить наличие iPhone 17 Pro">↗</a></div></div>
           </article>
           <article class="iphone-card featured" data-model="iPhone 18 Pro">
             <span class="iphone-new">Новинка · в продаже</span><span class="iphone-index">02</span>
-            <div class="phone-visual"><img src="iphone-18-pro.png" alt="iPhone 18 Pro и iPhone 18 Pro Max в цвете Burgundy" loading="lazy"></div>
-            <div class="iphone-info"><h3>iPhone 18 Pro</h3><p class="iphone-tagline">Максимальная камера и мощность.</p><div class="iphone-specs"><span>6.3″ / 6.9″</span><span>A20 Pro</span><span>48MP Pro Fusion</span></div><div class="iphone-bottom"><small>Цена по запросу</small><a class="iphone-buy magnetic" href="https://wa.me/79788425672?text=Интересует%20iPhone%2018%20Pro" target="_blank" rel="noopener" aria-label="Узнать цену iPhone 18 Pro">↗</a></div></div>
+            <div class="phone-visual"><img src="assets/products/normalized/iphone18.png" alt="iPhone 18 Pro в цвете Burgundy" loading="lazy"></div>
+            <div class="iphone-info"><h3>iPhone 18 Pro</h3><p class="iphone-tagline">Максимальная камера и мощность.</p><div class="iphone-specs"><span>256 ГБ</span><span>4 цвета</span><span>Новинка</span></div><div class="iphone-bottom"><small>от 126 000 ₽</small><a class="iphone-buy magnetic" href="https://wa.me/79788425672?text=Интересует%20iPhone%2018%20Pro" target="_blank" rel="noopener" aria-label="Уточнить наличие iPhone 18 Pro">↗</a></div></div>
           </article>
           <article class="iphone-card air" data-model="iPhone Air">
             <span class="iphone-new">Тонкий и лёгкий</span><span class="iphone-index">03</span>
-            <div class="phone-visual"><img src="iphone-air.png" alt="iPhone Air в голубом цвете" loading="lazy"></div>
-            <div class="iphone-info"><h3>iPhone Air</h3><p class="iphone-tagline">Невероятно тонкий. По-настоящему Pro.</p><div class="iphone-specs"><span>6.5″</span><span>A19 Pro</span><span>48MP Fusion</span></div><div class="iphone-bottom"><small>Цена по запросу</small><a class="iphone-buy magnetic" href="https://wa.me/79788425672?text=Интересует%20iPhone%20Air" target="_blank" rel="noopener" aria-label="Узнать цену iPhone Air">↗</a></div></div>
+            <div class="phone-visual"><img src="assets/products/normalized/iphoneAir.png" alt="iPhone Air в голубом цвете" loading="lazy"></div>
+            <div class="iphone-info"><h3>iPhone Air</h3><p class="iphone-tagline">Невероятно тонкий. По-настоящему Pro.</p><div class="iphone-specs"><span>256 ГБ</span><span>eSIM</span><span>4 цвета</span></div><div class="iphone-bottom"><small>от 75 000 ₽</small><a class="iphone-buy magnetic" href="https://wa.me/79788425672?text=Интересует%20iPhone%20Air" target="_blank" rel="noopener" aria-label="Уточнить наличие iPhone Air">↗</a></div></div>
           </article>
           <article class="iphone-card purple" data-model="iPhone 17">
             <span class="iphone-new">Популярный выбор</span><span class="iphone-index">04</span>
-            <div class="phone-visual"><img src="iphone-17.png" alt="iPhone 17 в цвете Lavender" loading="lazy"></div>
-            <div class="iphone-info"><h3>iPhone 17</h3><p class="iphone-tagline">Мощный, яркий и универсальный.</p><div class="iphone-specs"><span>6.3″</span><span>A19</span><span>48MP Dual Fusion</span></div><div class="iphone-bottom"><small>Цена по запросу</small><a class="iphone-buy magnetic" href="https://wa.me/79788425672?text=Интересует%20iPhone%2017" target="_blank" rel="noopener" aria-label="Узнать цену iPhone 17">↗</a></div></div>
+            <div class="phone-visual"><img src="assets/products/normalized/iphone17.png" alt="iPhone 17 в цвете Lavender" loading="lazy"></div>
+            <div class="iphone-info"><h3>iPhone 17</h3><p class="iphone-tagline">Мощный, яркий и универсальный.</p><div class="iphone-specs"><span>256 ГБ</span><span>SIM + eSIM</span><span>5 цветов</span></div><div class="iphone-bottom"><small>от 74 000 ₽</small><a class="iphone-buy magnetic" href="https://wa.me/79788425672?text=Интересует%20iPhone%2017" target="_blank" rel="noopener" aria-label="Уточнить наличие iPhone 17">↗</a></div></div>
           </article>
           <article class="iphone-card pink" data-model="iPhone 17e">
             <span class="iphone-new">Всё необходимое</span><span class="iphone-index">05</span>
-            <div class="phone-visual"><img src="iphone-17e.png" alt="iPhone 17e в розовом цвете" loading="lazy"></div>
-            <div class="iphone-info"><h3>iPhone 17e</h3><p class="iphone-tagline">Функции, которые важны.</p><div class="iphone-specs"><span>6.1″</span><span>A19</span><span>48MP Fusion</span></div><div class="iphone-bottom"><small>Цена по запросу</small><a class="iphone-buy magnetic" href="https://wa.me/79788425672?text=Интересует%20iPhone%2017e" target="_blank" rel="noopener" aria-label="Узнать цену iPhone 17e">↗</a></div></div>
+            <div class="phone-visual"><img src="assets/products/normalized/iphoneE.png" alt="iPhone 17e в розовом цвете" loading="lazy"></div>
+            <div class="iphone-info"><h3>iPhone 17e</h3><p class="iphone-tagline">Функции, которые важны.</p><div class="iphone-specs"><span>256 ГБ</span><span>SIM + eSIM</span><span>3 цвета</span></div><div class="iphone-bottom"><small>от 61 000 ₽</small><a class="iphone-buy magnetic" href="https://wa.me/79788425672?text=Интересует%20iPhone%2017e" target="_blank" rel="noopener" aria-label="Уточнить наличие iPhone 17e">↗</a></div></div>
           </article>
         </div>
         <div class="catalog-tip"><b>→</b> Прокручивайте вниз, чтобы увидеть модели</div>
@@ -236,7 +292,7 @@
       <div class="wrap"><div class="section-head reveal"><div class="kicker">Отзывы</div><h2 class="title">Нас рекомендуют.</h2><p class="lede">За качество ремонта, понятные объяснения и бережное отношение к устройствам.</p></div><div class="quotes"><article class="quote reveal"><div class="stars">★★★★★</div><blockquote>«Заменили экран быстро и аккуратно. Телефон выглядит как новый, всё работает идеально.»</blockquote><footer>Александр · Симферополь</footer></article><article class="quote reveal d2"><div class="stars">★★★★★</div><blockquote>«Сначала всё объяснили и только потом начали ремонт. Цена не изменилась.»</blockquote><footer>Мария · Крым</footer></article><article class="quote reveal d3"><div class="stars">★★★★★</div><blockquote>«Восстановили телефон после воды и сохранили фотографии. Огромное спасибо мастеру.»</blockquote><footer>Роман · Симферополь</footer></article></div></div>
     </section>
 
-    <section class="contact" id="contact"><div class="wrap reveal"><div class="kicker">АЙСТОР · Симферополь</div><h2>Починим?</h2><p>Выберите удобный способ связи. Предварительно оценим ремонт и подскажем ближайшее свободное время.</p><div class="hero-actions"><a class="button primary" href="https://wa.me/79788425672?text=Здравствуйте!%20Хочу%20оценить%20ремонт" target="_blank" rel="noopener">Связаться с нами</a><a class="button link" href="tel:+79788425672">+7 (978) 842-56-72</a></div><div class="social-connect" aria-label="Социальные сети и объявления АЙСТОР"><a class="social-pill telegram" href="https://t.me/istorecrimea" target="_blank" rel="noopener"><span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M21 4 9.7 14.7M21 4l-7.2 17-4.1-6.3L3 12l18-8Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="social-copy"><small>Telegram</small><strong>@istorecrimea</strong></span></a><a class="social-pill instagram" href="https://www.instagram.com/istore_crimea_?stkn=YjlvdzBpN2oxemRm" target="_blank" rel="noopener"><span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.4" cy="6.7" r="1" fill="currentColor"/></svg></span><span class="social-copy"><small>Instagram</small><strong>@istore_crimea_</strong></span></a><a class="social-pill avito" href="https://www.avito.ru/brands/i362689701" target="_blank" rel="noopener"><span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="7" cy="7" r="3.1" stroke="currentColor" stroke-width="1.8"/><circle cx="17.2" cy="6.2" r="2.3" stroke="currentColor" stroke-width="1.8"/><circle cx="6.2" cy="17" r="2.3" stroke="currentColor" stroke-width="1.8"/><circle cx="16.5" cy="16.5" r="3.5" stroke="currentColor" stroke-width="1.8"/></svg></span><span class="social-copy"><small>Avito</small><strong>Наш магазин</strong></span></a></div></div></section>
+    <section class="contact" id="contact"><div class="wrap reveal"><div class="kicker">АЙСТОР · Симферополь</div><h2>Поможем?</h2><p>Подберём технику, уточним наличие или предварительно оценим ремонт. Выберите удобный способ связи.</p><div class="hero-actions"><a class="button primary" href="#contact" data-contact-trigger>Получить консультацию</a><a class="button link" href="tel:+79788425672">+7 (978) 842-56-72</a></div><div class="social-connect" aria-label="Социальные сети и объявления АЙСТОР"><a class="social-pill telegram" href="https://t.me/istorecrimea" target="_blank" rel="noopener"><span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M21 4 9.7 14.7M21 4l-7.2 17-4.1-6.3L3 12l18-8Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="social-copy"><small>Telegram</small><strong>@istorecrimea</strong></span></a><a class="social-pill instagram" href="https://www.instagram.com/istore_crimea_?stkn=YjlvdzBpN2oxemRm" target="_blank" rel="noopener"><span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.4" cy="6.7" r="1" fill="currentColor"/></svg></span><span class="social-copy"><small>Instagram</small><strong>@istore_crimea_</strong></span></a><a class="social-pill avito" href="https://www.avito.ru/brands/i362689701" target="_blank" rel="noopener"><span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="7" cy="7" r="3.1" stroke="currentColor" stroke-width="1.8"/><circle cx="17.2" cy="6.2" r="2.3" stroke="currentColor" stroke-width="1.8"/><circle cx="6.2" cy="17" r="2.3" stroke="currentColor" stroke-width="1.8"/><circle cx="16.5" cy="16.5" r="3.5" stroke="currentColor" stroke-width="1.8"/></svg></span><span class="social-copy"><small>Avito</small><strong>Наш магазин</strong></span></a></div></div></section>
   </main>
 
   <footer class="footer"><div class="wrap"><div class="footer-top"><a href="#top" class="logo" aria-label="АЙСТОР"><span class="logo-text"><span class="logo-red">АЙ</span><span class="logo-white">СТОР</span></span><span class="logo-underline">продукция<span class="dot">•</span>аксессуары<span class="dot">•</span>ремонт</span></a><div class="footer-links"><a href="#repair">Ремонт</a><a href="#store">Техника</a><a href="privacy.html">Конфиденциальность</a><a href="https://t.me/istorecrimea" target="_blank" rel="noopener">Telegram</a><a href="https://www.instagram.com/istore_crimea_?stkn=YjlvdzBpN2oxemRm" target="_blank" rel="noopener">Instagram</a><a href="https://www.avito.ru/brands/i362689701" target="_blank" rel="noopener">Avito</a><a href="https://wa.me/79788425672" target="_blank" rel="noopener">WhatsApp</a></div></div><div class="footer-notice"><strong>Информационный сайт.</strong><span>Оформление заказа и оплата на сайте не осуществляются. Наличие, итоговая стоимость товара или ремонта и условия приобретения согласовываются индивидуально при обращении.</span></div><div class="footer-bottom"><span>© 2026 АЙСТОР. Все права защищены.</span><span>Не является официальным реселлером Apple Inc.</span></div></div></footer>

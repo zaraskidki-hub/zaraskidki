@@ -174,6 +174,16 @@
     .contact h2{font-size:clamp(54px,8vw,96px)}
     @media(max-width:800px){.hero-device.hero-dual{height:auto;grid-template-columns:1fr;margin-bottom:-30px}.hero-choice{min-height:400px}.why{padding:88px 0}.why-grid{grid-template-columns:1fr}.why-item,.why-item:nth-child(even){padding:28px 0;border-left:0;min-height:0}.why-item h3{margin-top:18px}}
     @media(max-width:560px){.hero h1{font-size:54px}.hero-device.hero-dual{margin-top:44px}.hero-choice{min-height:360px;padding:28px}.hero-choice.product-side>img{width:78%;height:68%;right:-14%;bottom:-1%}.hero-choice-copy{max-width:245px}.why .title{font-size:48px}.phone-visual{width:248px;height:248px;min-height:248px}}
+    .sound-gate{position:fixed;inset:0;z-index:300;display:grid;place-items:center;padding:24px;background:radial-gradient(circle at 50% 42%,rgba(227,6,19,.2),transparent 34%),rgba(0,0,0,.86);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);transition:opacity .7s var(--ease),visibility .7s var(--ease)}
+    .sound-gate.is-hidden{opacity:0;visibility:hidden;pointer-events:none}
+    .sound-gate-card{width:min(520px,100%);padding:46px 42px 40px;border:1px solid rgba(255,255,255,.14);border-radius:34px;background:linear-gradient(145deg,rgba(255,255,255,.11),rgba(255,255,255,.035));box-shadow:0 40px 140px rgba(0,0,0,.7),inset 0 1px rgba(255,255,255,.11);text-align:center;color:#fff}
+    .sound-gate-mark{width:74px;height:74px;margin:0 auto 25px;border-radius:24px;display:grid;place-items:center;background:linear-gradient(145deg,#f01828,#8c0007);box-shadow:0 20px 55px rgba(227,6,19,.38)}
+    .sound-wave{height:26px;display:flex;align-items:center;justify-content:center;gap:4px}.sound-wave i{display:block;width:3px;height:8px;border-radius:5px;background:currentColor;animation:soundBar 1.1s ease-in-out infinite}.sound-wave i:nth-child(2){height:18px;animation-delay:-.22s}.sound-wave i:nth-child(3){height:26px;animation-delay:-.44s}.sound-wave i:nth-child(4){height:14px;animation-delay:-.66s}.sound-wave i:nth-child(5){height:7px;animation-delay:-.88s}@keyframes soundBar{50%{transform:scaleY(.42);opacity:.58}}
+    .sound-gate h2{font-size:clamp(38px,7vw,58px);line-height:.92;letter-spacing:-.055em}.sound-gate p{max-width:390px;margin:18px auto 0;color:#aaaab0;font-size:16px;line-height:1.5}
+    .sound-gate-actions{display:flex;justify-content:center;gap:10px;margin-top:30px;flex-wrap:wrap}.sound-gate button{min-height:48px;padding:0 22px;border-radius:999px;border:1px solid rgba(255,255,255,.16);color:#fff;background:rgba(255,255,255,.065);font-weight:650;cursor:pointer;transition:.3s var(--ease)}.sound-gate button:hover{transform:translateY(-2px);background:rgba(255,255,255,.13)}.sound-gate .sound-yes{border-color:transparent;background:linear-gradient(135deg,#f01828,#a80009);box-shadow:0 14px 38px rgba(227,6,19,.3)}
+    .sound-toggle{position:fixed;z-index:135;right:22px;top:82px;display:flex;align-items:center;gap:11px;min-height:44px;padding:0 16px 0 13px;border:1px solid rgba(255,255,255,.15);border-radius:999px;background:rgba(8,8,10,.72);color:#fff;box-shadow:0 14px 45px rgba(0,0,0,.35);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);cursor:pointer;transition:transform .3s var(--ease),background .3s var(--ease),border-color .3s var(--ease)}.sound-toggle:hover{transform:translateY(-2px);border-color:rgba(255,255,255,.3);background:rgba(18,18,22,.88)}.sound-toggle .sound-wave{height:18px;gap:2px;color:#777}.sound-toggle .sound-wave i{width:2px;height:5px;animation:none}.sound-toggle .sound-wave i:nth-child(2),.sound-toggle .sound-wave i:nth-child(4){height:11px}.sound-toggle .sound-wave i:nth-child(3){height:16px}.sound-toggle.is-on .sound-wave{color:#ff3d4a}.sound-toggle.is-on .sound-wave i{animation:soundBar 1.05s ease-in-out infinite}.sound-toggle.is-on .sound-wave i:nth-child(2){animation-delay:-.2s}.sound-toggle.is-on .sound-wave i:nth-child(3){animation-delay:-.4s}.sound-toggle.is-on .sound-wave i:nth-child(4){animation-delay:-.6s}.sound-toggle.is-on .sound-wave i:nth-child(5){animation-delay:-.8s}.sound-toggle-label{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+    @media(max-width:560px){.sound-gate-card{padding:38px 23px 32px;border-radius:28px}.sound-gate-actions{display:grid}.sound-gate button{width:100%}.sound-toggle{right:14px;top:74px;padding-right:13px}.sound-toggle-label{font-size:10px}}
+    @media(prefers-reduced-motion:reduce){.sound-wave i{animation:none!important}}
   </style>
 </head>
 <body>
@@ -252,7 +262,7 @@
     </section>
 
     <section class="store catalog-head" id="store">
-      <div class="wrap"><div class="section-head reveal"><div class="kicker">Популярное сейчас · цены обновлены 8 октября</div><h2 class="title">Выбирают чаще.<br>Цены уже здесь.</h2><p class="lede">Показываем минимальную актуальную стоимость популярных моделей прямо на главной. Цвета, память и наличие можно уточнить одним сообщением.</p><a class="button primary catalog-cta" href="catalog.html"><span>Смотреть весь каталог</span><span class="catalog-cta-icon" aria-hidden="true">↗</span></a></div></div>
+      <div class="wrap"><div class="section-head reveal"><div class="kicker">Популярное сейчас · цены обновлены 13 октября</div><h2 class="title">Выбирают чаще.<br>Цены уже здесь.</h2><p class="lede">Показываем минимальную актуальную стоимость популярных моделей прямо на главной. Цвета, память и наличие можно уточнить одним сообщением.</p><a class="button primary catalog-cta" href="catalog.html"><span>Смотреть весь каталог</span><span class="catalog-cta-icon" aria-hidden="true">↗</span></a></div></div>
     </section>
     <section class="catalog-scroll" id="catalogScroll">
       <div class="catalog-sticky">
@@ -261,17 +271,17 @@
           <article class="iphone-card duo active" data-model="iPhone 17 Pro">
             <span class="iphone-new">Популярная Pro-модель</span><span class="iphone-index">01</span>
             <div class="phone-visual"><img src="assets/products/normalized/iphonePro.png" alt="iPhone 17 Pro из каталога АЙСТОР" loading="lazy"></div>
-            <div class="iphone-info"><h3>iPhone 17 Pro</h3><p class="iphone-tagline">Pro-возможности в компактном корпусе.</p><div class="iphone-specs"><span>256 ГБ</span><span>eSIM</span><span>3 цвета</span></div><div class="iphone-bottom"><small>от 95 500 ₽</small><a class="iphone-buy magnetic" href="https://wa.me/79788425672?text=Интересует%20iPhone%2017%20Pro" target="_blank" rel="noopener" aria-label="Уточнить наличие iPhone 17 Pro">↗</a></div></div>
+            <div class="iphone-info"><h3>iPhone 17 Pro</h3><p class="iphone-tagline">Pro-возможности в компактном корпусе.</p><div class="iphone-specs"><span>256 ГБ</span><span>eSIM</span><span>3 цвета</span></div><div class="iphone-bottom"><small>от 94 000 ₽</small><a class="iphone-buy magnetic" href="https://wa.me/79788425672?text=Интересует%20iPhone%2017%20Pro" target="_blank" rel="noopener" aria-label="Уточнить наличие iPhone 17 Pro">↗</a></div></div>
           </article>
           <article class="iphone-card featured" data-model="iPhone 18 Pro">
             <span class="iphone-new">Новинка · в продаже</span><span class="iphone-index">02</span>
             <div class="phone-visual"><img src="assets/products/normalized/iphone18.png" alt="iPhone 18 Pro в цвете Burgundy" loading="lazy"></div>
-            <div class="iphone-info"><h3>iPhone 18 Pro</h3><p class="iphone-tagline">Максимальная камера и мощность.</p><div class="iphone-specs"><span>256 ГБ</span><span>4 цвета</span><span>Новинка</span></div><div class="iphone-bottom"><small>от 126 000 ₽</small><a class="iphone-buy magnetic" href="https://wa.me/79788425672?text=Интересует%20iPhone%2018%20Pro" target="_blank" rel="noopener" aria-label="Уточнить наличие iPhone 18 Pro">↗</a></div></div>
+            <div class="iphone-info"><h3>iPhone 18 Pro</h3><p class="iphone-tagline">Максимальная камера и мощность.</p><div class="iphone-specs"><span>256 ГБ</span><span>eSIM + SIM</span><span>4 цвета</span></div><div class="iphone-bottom"><small>от 114 000 ₽</small><a class="iphone-buy magnetic" href="https://wa.me/79788425672?text=Интересует%20iPhone%2018%20Pro" target="_blank" rel="noopener" aria-label="Уточнить наличие iPhone 18 Pro">↗</a></div></div>
           </article>
           <article class="iphone-card air" data-model="iPhone Air">
             <span class="iphone-new">Тонкий и лёгкий</span><span class="iphone-index">03</span>
             <div class="phone-visual"><img src="assets/products/normalized/iphoneAir.png" alt="iPhone Air в голубом цвете" loading="lazy"></div>
-            <div class="iphone-info"><h3>iPhone Air</h3><p class="iphone-tagline">Невероятно тонкий. По-настоящему Pro.</p><div class="iphone-specs"><span>256 ГБ</span><span>eSIM</span><span>4 цвета</span></div><div class="iphone-bottom"><small>от 75 000 ₽</small><a class="iphone-buy magnetic" href="https://wa.me/79788425672?text=Интересует%20iPhone%20Air" target="_blank" rel="noopener" aria-label="Уточнить наличие iPhone Air">↗</a></div></div>
+            <div class="iphone-info"><h3>iPhone Air</h3><p class="iphone-tagline">Невероятно тонкий. По-настоящему Pro.</p><div class="iphone-specs"><span>256 / 512 ГБ</span><span>eSIM</span><span>4 цвета</span></div><div class="iphone-bottom"><small>от 75 000 ₽</small><a class="iphone-buy magnetic" href="https://wa.me/79788425672?text=Интересует%20iPhone%20Air" target="_blank" rel="noopener" aria-label="Уточнить наличие iPhone Air">↗</a></div></div>
           </article>
           <article class="iphone-card purple" data-model="iPhone 17">
             <span class="iphone-new">Популярный выбор</span><span class="iphone-index">04</span>
@@ -281,7 +291,7 @@
           <article class="iphone-card pink" data-model="iPhone 17e">
             <span class="iphone-new">Всё необходимое</span><span class="iphone-index">05</span>
             <div class="phone-visual"><img src="assets/products/normalized/iphoneE.png" alt="iPhone 17e в розовом цвете" loading="lazy"></div>
-            <div class="iphone-info"><h3>iPhone 17e</h3><p class="iphone-tagline">Функции, которые важны.</p><div class="iphone-specs"><span>256 ГБ</span><span>SIM + eSIM</span><span>3 цвета</span></div><div class="iphone-bottom"><small>от 61 000 ₽</small><a class="iphone-buy magnetic" href="https://wa.me/79788425672?text=Интересует%20iPhone%2017e" target="_blank" rel="noopener" aria-label="Уточнить наличие iPhone 17e">↗</a></div></div>
+            <div class="iphone-info"><h3>iPhone 17e</h3><p class="iphone-tagline">Функции, которые важны.</p><div class="iphone-specs"><span>256 ГБ</span><span>SIM + eSIM</span><span>2 цвета в наличии</span></div><div class="iphone-bottom"><small>от 61 000 ₽</small><a class="iphone-buy magnetic" href="https://wa.me/79788425672?text=Интересует%20iPhone%2017e" target="_blank" rel="noopener" aria-label="Уточнить наличие iPhone 17e">↗</a></div></div>
           </article>
         </div>
         <div class="catalog-tip"><b>→</b> Прокручивайте вниз, чтобы увидеть модели</div>
